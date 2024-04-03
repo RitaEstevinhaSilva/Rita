@@ -18,6 +18,7 @@ body {
     overflow-x: hidden;
     cursor: default;
     user-select: none;
+      
 }
 
 body p {
@@ -44,18 +45,40 @@ body::-webkit-scrollbar {
     width: 100%;
     z-index: 1000;
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 
 #my-name {
-    /* font-family: pinyon; */
+    font-family: pinyon;
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 700;
     font-style: normal;
     font-size: 20px;
     position: relative;
+    text-decoration: none;
 }
+#my-name:hover {
+    animation: shake 0.5s ease; 
+}
+
+.about-project{
+    text-decoration: none;
+}
+
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+
+
+
 
 .space {
     padding-top: 45px;
@@ -65,7 +88,7 @@ body::-webkit-scrollbar {
 
 a {
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     color: whitesmoke;
     text-decoration: underline;
@@ -89,7 +112,7 @@ a:hover {
     width: 100%;
 
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     display: grid;
     font-size: 15px;
@@ -104,7 +127,7 @@ a:hover {
 
 #grid-titles {
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     /* font-style: italic; */
     font-size: 8px;
     letter-spacing: 0.8px;
@@ -138,7 +161,7 @@ hr {
 .title-date p {
     margin-bottom: 8px;
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     font-size: 15px;
     /* text-decoration: underline; */
@@ -183,11 +206,12 @@ hr {
 
 .about p {
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight:400;
     font-style: normal;
     margin-bottom: 8px;
     font-size: 15px;
 }
+
 
 .about {
     display: grid;
@@ -200,7 +224,7 @@ hr {
 
 #grid-titles-about p {
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     /* font-style: italic; */
     font-size: 8px;
     letter-spacing: 0.8px;
@@ -250,7 +274,7 @@ hr {
 
 .new-div-section h1{
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     /* font-style: italic; */
     font-size: 8px;
     letter-spacing: 0.8px;
@@ -281,7 +305,7 @@ hr {
 }
 .footer p{ 
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     /* font-style: italic; */
     font-size: 12px;
 }
