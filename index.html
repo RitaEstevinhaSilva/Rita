@@ -224,6 +224,11 @@
                 </video>
             </div>
 
+            <div class="arrows" style="display: none;">
+                <a> anterior </a>
+                <a> seguinte </a>
+            </div>
+
         </div>
 
     </div>
@@ -385,63 +390,72 @@
 
 <script>
 
+    //  function initializeCarousel(carousel) {
+
+    //     const images = carousel.querySelector('.images');
+
+    //     const imageWidth = carousel.offsetWidth;
+
+
+    //     let currentIndex = 0;
+
+    //     function showImage(index) {
+
+    //         const offset = -index * imageWidth;
+    //         images.style.transform = `translateX(${offset}px)`;
+
+    //     }
+
+    //     showImage(currentIndex);
+
+    //     carousel.addEventListener('click', function (event) {
+    //         const rect = carousel.getBoundingClientRect();
+    //         const clickX = event.clientX - rect.left;
+
+    //         // Check if the click occurred on the left or right side of the image container
+    //         if (clickX < imageWidth / 2) {
+    //             // Clicked on the left side, navigate to the previous image
+    //             currentIndex = (currentIndex - 1 + images.children.length) % images.children.length;
+    //             // carousel.style.cursor = 'url("left-arrow.svg"), auto';
+    //         } else {
+    //             // Clicked on the right side, navigate to the next image
+    //             currentIndex = (currentIndex + 1) % images.children.length;
+    //             // document.body.style.cursor = 'url("right-arrow.svg"), auto';
+    //         }
+
+
+    //         showImage(currentIndex);
+
+    //     });
+
+
+    // }
+
     function initializeCarousel(carousel) {
         const images = carousel.querySelector('.images');
-
         const imageWidth = carousel.offsetWidth;
-
-
         let currentIndex = 0;
 
         function showImage(index) {
-
             const offset = -index * imageWidth;
             images.style.transform = `translateX(${offset}px)`;
-
         }
 
         showImage(currentIndex);
 
-        carousel.addEventListener('click', function (event) {
-            const rect = carousel.getBoundingClientRect();
-            const clickX = event.clientX - rect.left;
-
-            // Check if the click occurred on the left or right side of the image container
-            if (clickX < imageWidth / 2) {
-                // Clicked on the left side, navigate to the previous image
-                currentIndex = (currentIndex - 1 + images.children.length) % images.children.length;
-                // carousel.style.cursor = 'url("left-arrow.svg"), auto';
-            } else {
-                // Clicked on the right side, navigate to the next image
-                currentIndex = (currentIndex + 1) % images.children.length;
-                // document.body.style.cursor = 'url("right-arrow.svg"), auto';
-            }
-
-
+        carousel.querySelector('.arrows a:nth-child(1)').addEventListener('click', function () {
+            // Previous button clicked, navigate to the previous image
+            currentIndex = (currentIndex - 1 + images.children.length) % images.children.length;
             showImage(currentIndex);
-
         });
 
-
-
-
-        // carousel.addEventListener('mousemove', function (event) {
-        //     const rect = carousel.getBoundingClientRect();
-        //     const clickX = event.clientX - rect.left;
-
-        //     if (clickX < rect.width / 2) {
-        //         // If the mouse is on the left side, set the cursor to left-arrow
-        //         carousel.style.cursor = 'url("left-arrow.svg"), auto';
-        //     } else {
-        //         // If the mouse is on the right side, set the cursor to right-arrow
-        //         carousel.style.cursor = 'url("right-arrow.svg"), auto';
-        //     }
-        // });
-
-        // carousel.addEventListener('mouseleave', function () {
-        //     carousel.style.cursor = 'auto';
-        // });
+        carousel.querySelector('.arrows a:nth-child(2)').addEventListener('click', function () {
+            // Next button clicked, navigate to the next image
+            currentIndex = (currentIndex + 1) % images.children.length;
+            showImage(currentIndex);
+        });
     }
+
 
 
 
