@@ -3,15 +3,12 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 25 25" style="enable-background:new 0 0 25 25;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#F5F5F5;}
-	.st1{fill:#1D1D1B;}
+	.st0{fill:#202020;
+	mix-blend-mode: divide;}
 </style>
 <g id="Left-2">
 	<g>
-		<polygon class="st0" points="16.1,18.3 20.9,13.5 0.5,13.5 0.5,11.5 20.9,11.5 16.1,6.7 17.5,5.3 24.7,12.5 17.5,19.7 		"/>
-		<path class="st1" d="M17.5,6l6.5,6.5L17.5,19l-0.7-0.7l5.3-5.3H1v-1h21.1l-5.3-5.3L17.5,6 M17.5,4.6l-0.7,0.7L16.1,6l-0.7,0.7
-			l0.7,0.7l3.6,3.6H1H0v1v1v1h1h18.7l-3.6,3.6l-0.7,0.7l0.7,0.7l0.7,0.7l0.7,0.7l0.7-0.7l6.5-6.5l0.7-0.7l-0.7-0.7l-6.5-6.5
-			L17.5,4.6L17.5,4.6z"/>
+		<path class="st0" d="M17.5,19l-0.7-0.7l5.3-5.3H1v-1h21.1l-5.3-5.3L17.5,6l6.5,6.5L17.5,19"/>
 	</g>
 </g>
 </svg>

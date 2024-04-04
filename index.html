@@ -12,7 +12,7 @@
 
 <body>
     <div id="header">
-        <a id="my-name" href="index.html"> Rita Estevinha Silva</a>
+        <a id="my-name" href="/"> Rita Estevinha Silva</a>
         <div class="menu">
 
             <a class="about-project" href="about.html"> SOBRE </a>
@@ -69,7 +69,35 @@
 
         <div class="carousel">
             <div class="images">
+                <video autoplay="" muted="" loop="" style="width: 100%;">
+                    <source src="images/tese/2023-09-13 11-42-01.mp4" type="video/mp4">
 
+                </video>
+
+
+                <img src="images/tese/thesis3.jpg">
+                <img src="images/tese/thesis4.jpg">
+                <img src="images/tese/thesis5.jpg">
+                <img src="images/tese/thesis6.jpg">
+                <img src="images/tese/thesis7.jpg">
+
+
+                <video autoplay="" muted="" loop="" style="width: 100%;">
+                    <source src="images/tese/spreads-gif.mp4" type="video/mp4">
+
+                </video>
+                <!-- <img src="images/tese/thesis.jpg"> -->
+
+                <img src="images/tese/thesis2.jpg">
+                <img src="images/tese/thesiss.jpg">
+                <img src="images/tese/thesiss2.jpg">
+
+
+
+            </div>
+            <div class="arrows">
+                <a> anterior </a>
+                <a> seguinte </a>
             </div>
 
         </div>
@@ -111,6 +139,10 @@
                 <img src="images/UnseenHands/unseen-hands-4.jpg">
                 <img src="images/UnseenHands/unseen-hands-5.jpg">
             </div>
+            <div class="arrows">
+                <a> anterior </a>
+                <a> seguinte </a>
+            </div>
 
         </div>
 
@@ -142,11 +174,54 @@
         <div class="carousel">
             <div class="images">
 
-
-                <img src="images/web2print/web2print.jpg">
                 <img src="images/web2print/Book_Mockup_2.jpg">
+                <img src="images/web2print/web2print.jpg">
 
 
+
+            </div>
+            <div class="arrows">
+                <a> anterior </a>
+                <a> seguinte </a>
+            </div>
+
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="project">
+        <div class="title-date">
+            <p class="date"> 2021 </p>
+
+
+
+        </div>
+        <div>
+            <p class="title"> O meu primeiro website </p>
+        </div>
+
+        <div class="description">
+            <p> Desenvolvimento Web (CSS, HTML, JavaScript). Website pessoal inspirado na categoria <a
+                    href="https://www.webdesignmuseum.org/all-websites/tag-bad-ugly-websites" target="_blank"
+                    style="font-style: italic;">Bad & Ugly
+                    Websites do Web Design Museum. </a> Desenvolvido com grandes doses de paciência,
+                amor próprio, humor e tutoriais do youtube.</p>
+
+            <p> Projeto académico para a disciplina
+                de Desenvolvimento Web. Orientado por Luís Lucas Pereira.</p>
+
+
+
+        </div>
+
+
+        <div class="carousel">
+            <div class="images">
+                <video autoplay="" muted="" loop="" style="width: 100%;">
+                    <source src="images/website/my-first-website (2).mp4" type="video/mp4">
+
+                </video>
             </div>
 
         </div>
@@ -179,18 +254,25 @@
 
         <div class="carousel">
             <div class="images">
-                <img src="images/modular type/modular-type.jpg">
+                <img src="images/modular type/modular-type10.jpg">
+
                 <img src="images/modular type/modular-type2.jpg">
                 <img src="images/modular type/modular-type3.jpg">
                 <img src="images/modular type/modular-type4.jpg">
                 <img src="images/modular type/modular-type5.jpg">
                 <img src="images/modular type/modular-type6.jpg">
-                <!-- <img src="images/modular type/modular-type7.jpg" alt="Image 1"> -->
+                <img src="images/modular type/modular-type7.jpg">
                 <img src="images/modular type/modular-type8.jpg">
-                <img src="images/modular type/modular-type10.jpg">
-                <!-- <img src="images/modular type/modular-type11.jpg" alt="Image 1"> -->
-                <img src="images/modular type/modular-type12.jpg">
+                <img src="images/modular type/modular-type9.jpg">
+                <img src="images/modular type/modular-type.jpg">
+                <img src="images/modular type/modular-type11.jpg">
+                <!-- <img src="images/modular type/modular-type12.jpg"> -->
 
+            </div>
+
+            <div class="arrows">
+                <a> anterior </a>
+                <a> seguinte </a>
             </div>
 
         </div>
@@ -222,14 +304,20 @@
 
         <div class="carousel" id="carousel2">
             <div class="images">
-                <img src="images/alta&baixa/alta&baixa.jpg">
+
                 <img src="images/alta&baixa/alta&baixa2.jpg">
                 <img src="images/alta&baixa/alta&baixa3.jpg">
                 <img src="images/alta&baixa/alta&baixa5.jpg">
                 <img src="images/alta&baixa/alta&baixa6.jpg">
                 <img src="images/alta&baixa/alta&baixa7.jpg">
                 <img src="images/alta&baixa/alta&baixa8.jpg">
-                <img src="images/alta&baixa/alta&baixa4.jpg">
+                <img src="images/alta&baixa/alta&baixa.jpg">
+                <!-- <img src="images/alta&baixa/alta&baixa4.jpg"> -->
+            </div>
+
+            <div class="arrows">
+                <a> anterior </a>
+                <a> seguinte </a>
             </div>
 
         </div>
@@ -277,8 +365,13 @@
                 <img src="images/novo/novo11.jpg">
 
             </div>
+            <div class="arrows">
+                <a> anterior </a>
+                <a> seguinte </a>
+            </div>
 
         </div>
+
 
     </div>
     <hr>
@@ -294,13 +387,17 @@
 
     function initializeCarousel(carousel) {
         const images = carousel.querySelector('.images');
-        // const carouselDiv = 
+
         const imageWidth = carousel.offsetWidth;
+
+
         let currentIndex = 0;
 
         function showImage(index) {
+
             const offset = -index * imageWidth;
             images.style.transform = `translateX(${offset}px)`;
+
         }
 
         showImage(currentIndex);
@@ -319,32 +416,31 @@
                 currentIndex = (currentIndex + 1) % images.children.length;
                 // document.body.style.cursor = 'url("right-arrow.svg"), auto';
             }
+
+
             showImage(currentIndex);
 
-
         });
 
-        // carousel.addEventListener('mouseenter', function () {
-        //     carousel.style.cursor = 'url("right-arrow.svg"), auto';
 
+
+
+        // carousel.addEventListener('mousemove', function (event) {
+        //     const rect = carousel.getBoundingClientRect();
+        //     const clickX = event.clientX - rect.left;
+
+        //     if (clickX < rect.width / 2) {
+        //         // If the mouse is on the left side, set the cursor to left-arrow
+        //         carousel.style.cursor = 'url("left-arrow.svg"), auto';
+        //     } else {
+        //         // If the mouse is on the right side, set the cursor to right-arrow
+        //         carousel.style.cursor = 'url("right-arrow.svg"), auto';
+        //     }
         // });
 
-        carousel.addEventListener('mousemove', function (event) {
-            const rect = carousel.getBoundingClientRect();
-            const clickX = event.clientX - rect.left;
-
-            if (clickX < rect.width / 2) {
-                // If the mouse is on the left side, set the cursor to left-arrow
-                carousel.style.cursor = 'url("left-arrow.svg"), auto';
-            } else {
-                // If the mouse is on the right side, set the cursor to right-arrow
-                carousel.style.cursor = 'url("right-arrow.svg"), auto';
-            }
-        });
-
-        carousel.addEventListener('mouseleave', function () {
-            carousel.style.cursor = 'auto';
-        });
+        // carousel.addEventListener('mouseleave', function () {
+        //     carousel.style.cursor = 'auto';
+        // });
     }
 
 
