@@ -58,7 +58,8 @@
                 sistemas de identidade visual dinâmicos. </p>
 
 
-            <p> Alinhada com a investigação corrente do CDV Lab. (Computational Design & Visualization Lab.) e orientada por João Cunha e Tiago Martins. </p>
+            <p> Alinhada com a investigação corrente do CDV Lab. (Computational Design & Visualization Lab.) e orientada
+                por João Cunha e Tiago Martins. </p>
 
             <!-- <p> Dissertação disponível no   <a id="about" href="https://hdl.handle.net/10316/110589" target="_blank"> repositório científico</a> da Universidade de Coimbra.</p> -->
 
@@ -416,42 +417,42 @@
     //     });
     // }
     function initializeCarousel(carousel) {
-    const images = carousel.querySelector('.images');
-    const imageWidth = carousel.offsetWidth;
-    let currentIndex = 0;
+        const images = carousel.querySelector('.images');
+        const imageWidth = carousel.offsetWidth;
+        let currentIndex = 0;
 
-    function showImage(index) {
-        const offset = -index * imageWidth;
-        images.style.transform = `translateX(${offset}px)`;
+        function showImage(index) {
+            const offset = -index * imageWidth;
+            images.style.transform = `translateX(${offset}px)`;
+        }
+
+        showImage(currentIndex);
+
+        const previousLink = carousel.querySelector('.arrows a:nth-child(1)');
+        const nextLink = carousel.querySelector('.arrows a:nth-child(2)');
+
+        previousLink.addEventListener('click', function () {
+            // Previous button clicked, navigate to the previous image
+            currentIndex = (currentIndex - 1 + images.children.length) % images.children.length;
+            showImage(currentIndex);
+            // Set link color to orange and revert it back after a short delay
+            previousLink.style.color = "orangered";
+            setTimeout(() => {
+                previousLink.style.color = "#202020"; // Default color
+            }, 200); // Adjust the delay (in milliseconds) as needed
+        });
+
+        nextLink.addEventListener('click', function () {
+            // Next button clicked, navigate to the next image
+            currentIndex = (currentIndex + 1) % images.children.length;
+            showImage(currentIndex);
+            // Set link color to orange and revert it back after a short delay
+            nextLink.style.color = "orangered";
+            setTimeout(() => {
+                nextLink.style.color = "#202020"; // Default color
+            }, 200); // Adjust the delay (in milliseconds) as needed
+        });
     }
-
-    showImage(currentIndex);
-
-    const previousLink = carousel.querySelector('.arrows a:nth-child(1)');
-    const nextLink = carousel.querySelector('.arrows a:nth-child(2)');
-
-    previousLink.addEventListener('click', function () {
-        // Previous button clicked, navigate to the previous image
-        currentIndex = (currentIndex - 1 + images.children.length) % images.children.length;
-        showImage(currentIndex);
-        // Set link color to orange and revert it back after a short delay
-        previousLink.style.color = "orangered";
-        setTimeout(() => {
-            previousLink.style.color = "#202020"; // Default color
-        }, 200); // Adjust the delay (in milliseconds) as needed
-    });
-
-    nextLink.addEventListener('click', function () {
-        // Next button clicked, navigate to the next image
-        currentIndex = (currentIndex + 1) % images.children.length;
-        showImage(currentIndex);
-        // Set link color to orange and revert it back after a short delay
-        nextLink.style.color = "orangered";
-        setTimeout(() => {
-            nextLink.style.color = "#202020"; // Default color
-        }, 200); // Adjust the delay (in milliseconds) as needed
-    });
-}
 
 
 
@@ -468,6 +469,14 @@
         const carousels = document.querySelectorAll('.carousel');
         carousels.forEach(initializeCarousel);
     });
+
+    window.addEventListener('resize', function () {
+    // This function will be called every time the window is resized
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(initializeCarousel);
+});
+
+
 
 
 
