@@ -219,10 +219,16 @@
 
         <div class="carousel">
             <div class="images">
-                <video autoplay="" muted="" loop="" style="width: 100%;">
+                <!-- <video autoplay="" muted="" loop="" style="width: 100%;">
                     <source src="images/website/my-first-website (2).mp4" type="video/mp4">
 
+                </video> -->
+                <video autoplay muted loop playsinline style="width: 100%;">
+                    <source src="images/website/my-first-website (2).mp4" type="video/mp4">
                 </video>
+                
+               
+
             </div>
 
             <div class="arrows" style="display: none;">
@@ -470,11 +476,11 @@
         carousels.forEach(initializeCarousel);
     });
 
-    window.addEventListener('resize', function () {
-    // This function will be called every time the window is resized
-    const carousels = document.querySelectorAll('.carousel');
-    carousels.forEach(initializeCarousel);
-});
+//     window.addEventListener('resize', function () {
+//     // This function will be called every time the window is resized
+//     const carousels = document.querySelectorAll('.carousel');
+//     carousels.forEach(initializeCarousel);
+// });
 
 
 
