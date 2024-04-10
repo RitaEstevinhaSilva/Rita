@@ -6,45 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rita Estevinha Silva</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- <script src="script.js"></script> -->
     <link rel="stylesheet" href="https://use.typekit.net/vxb3fyb.css">
 </head>
 
 <body>
+
+   
     <div id="header">
         <a id="my-name" href="/"> Rita Estevinha Silva</a>
         <div class="menu">
 
             <a class="about-project" href="about.html"> SOBRE </a>
-            <!-- <p> PT / ENG</p> -->
+            <a href="#" onclick="setLanguagePreference('en')">eng </a>
+            <a href="#" onclick="setLanguagePreference('pt')">pt</a>
         </div>
     </div>
 
     <!-- <p> contactos </p> -->
     <div class="space"> </div>
 
-    <div class="project" id="grid-titles">
-        <div>
-            <p> ANO </p>
-        </div>
-        <div>
-            <p> NOME DO PROJETO </p>
-        </div>
-        <div>
-            <p> DESCRIÇÃO </p>
-        </div>
-        <div>
-            <p> PROJETO </p>
-        </div>
-    </div>
 
     <hr>
     <div class="project">
+
         <div class="title-date">
-            <p> 2023 </p>
+            <p> DynamicIDioms </p>
+            <p data-i18n="p1-classification-1" style="margin-bottom: 0;"> </p>
+            <p data-i18n="p1-classification-2"> </p>
+
+            <p> / 2023 </p>
+
+
+            <!-- <p> Dissertação disponível no   <a id="about" href="https://hdl.handle.net/10316/110589" target="_blank"> repositório científico</a> da Universidade de Coimbra.</p> -->
+
         </div>
+
+        <div class="description">
+            <p data-i18n="p1-description"> </p>
+            <p data-i18n="p1-description-2"> </p>
+            <p data-i18n="p1-description-3"> </p>
+
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides1">
+
+                <video autoplay muted loop playsinline style="width: 100%;">
+                    <source src="images/tese/2023-09-13 11-42-01.mp4" type="video/mp4">
+
+                </video>
+                <p> 1/6</p>
+
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/tese/thesis3.jpg">
+                <p> 2/6</p>
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/tese/thesis4.jpg">
+                <p> 3/6</p>
+            </div>
+
+            <div class="mySlides1">
+                <img src="images/tese/thesis5.jpg">
+                <p> 4/6</p>
+            </div>
+            <div class="mySlides1">
+                <img src="images/tese/thesis6.jpg">
+                <p> 5/6</p>
+            </div>
+            <div class="mySlides1">
+                <img src="images/tese/thesis7.jpg">
+                <p> 6/6</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 0)"></a>
+            <a class="next" onclick="plusSlides(1, 0)"></a>
+        </div>
+
+
+
+    </div>
+
+    <hr>
+
+    <div class="project">
+
         <div class="title-date">
-            <p> Ferramentas Computacionais para o Design de Identidades Visuais Dinâmicas </p>
+            <p data-i18n="p2-name"> </p>
+            <p data-i18n="p2-class-1" style="margin: 0;"> </p>
+            <p data-i18n="p2-class-2"> </p>
+            <p> / 2023 </p>
+
         </div>
 
         <div class="description">
@@ -61,58 +116,49 @@
             <p> Alinhada com a investigação corrente do CDV Lab. (Computational Design & Visualization Lab.) e orientada
                 por João Cunha e Tiago Martins. </p>
 
-            <!-- <p> Dissertação disponível no   <a id="about" href="https://hdl.handle.net/10316/110589" target="_blank"> repositório científico</a> da Universidade de Coimbra.</p> -->
-
-
-
         </div>
 
+        <div class="slideshow-container">
+            <div class="mySlides2">
+                <img src="images/tese/thesiss2.jpg" style="width:100%">
+                <p> 1/4</p>
+            </div>
 
-        <div class="carousel">
-            <div class="images">
+            <div class="mySlides2">
                 <video autoplay muted loop playsinline style="width: 100%;">
-                    <source src="images/tese/2023-09-13 11-42-01.mp4" type="video/mp4">
-
-                </video>
-
-
-                <img src="images/tese/thesis3.jpg">
-                <img src="images/tese/thesis4.jpg">
-                <img src="images/tese/thesis5.jpg">
-                <img src="images/tese/thesis6.jpg">
-                <img src="images/tese/thesis7.jpg">
-
-
-                <video autoplay="" muted="" loop="" style="width: 100%;">
                     <source src="images/tese/spreads-gif.mp4" type="video/mp4">
 
                 </video>
-                <!-- <img src="images/tese/thesis.jpg"> -->
-
-                <img src="images/tese/thesis2.jpg">
-                <img src="images/tese/thesiss.jpg">
-                <img src="images/tese/thesiss2.jpg">
-
-
+                <p> 2/4</p>
 
             </div>
-            <div class="arrows">
-                <a> anterior </a>
-                <a> seguinte </a>
+
+
+            <div class="mySlides2">
+                <img src="images/tese/thesiss.jpg" style="width:100%">
+                <p> 3/4</p>
             </div>
 
+
+            <div class="mySlides2">
+                <img src="images/tese/thesis2.jpg" style="width:100%">
+                <p> 4/4</p>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1, 1)"></a>
+            <a class="next" onclick="plusSlides(1, 1)"></a>
         </div>
 
     </div>
 
     <hr>
     <div class="project">
-        <div class="title-date">
-            <p> 2022 </p>
 
-        </div>
         <div class="title-date">
             <p style="font-style: italic;"> Unseen Hands: a messy history of women in graphic design </p>
+            <p> / Editorial Design </p>
+            <p> / 2022 </p>
         </div>
 
         <div class="description">
@@ -132,34 +178,48 @@
         </div>
 
 
-        <div class="carousel" id="carousel1">
-            <div class="images">
+        <div class="slideshow-container">
+            <div class="mySlides3">
                 <img src="images/UnseenHands/unseen-hands-.jpg">
-                <img src="images/UnseenHands/unseen-hands-2.jpg">
-                <img src="images/UnseenHands/unseen-hands-3.jpg">
-                <img src="images/UnseenHands/unseen-hands-4.jpg">
-                <img src="images/UnseenHands/unseen-hands-5.jpg">
-            </div>
-            <div class="arrows">
-                <a> anterior </a>
-                <a> seguinte </a>
+                <p> 1/5</p>
             </div>
 
+            <div class="mySlides3">
+                <img src="images/UnseenHands/unseen-hands-2.jpg">
+                <p> 2/5</p>
+
+            </div>
+            <div class="mySlides3">
+                <img src="images/UnseenHands/unseen-hands-3.jpg">
+                <p> 3/5</p>
+            </div>
+
+            <div class="mySlides3">
+                <img src="images/UnseenHands/unseen-hands-4.jpg">
+                <p> 4/5</p>
+            </div>
+
+
+            <div class="mySlides3">
+                <img src="images/UnseenHands/unseen-hands-5.jpg">
+                <p> 5/5</p>
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1, 2)"></a>
+            <a class="next" onclick="plusSlides(1, 2)"></a>
         </div>
 
     </div>
     <hr>
 
     <div class="project">
+
         <div class="title-date">
-            <p class="date"> 2022 </p>
-
-
-
-        </div>
-        <div>
-            <p class="title"> Capa do livro <span style="font-style: italic;">Web-to-Print: A Step-by-Step Guide for
+            <p> Capa do livro <span style="font-style: italic;">Web-to-Print: A Step-by-Step Guide for
                     Implementing Web-to-Print Technology </span> </p>
+
+            <p> / 2022 </p>
         </div>
 
         <div class="description">
@@ -172,34 +232,33 @@
         </div>
 
 
-        <div class="carousel">
-            <div class="images">
 
+        <div class="slideshow-container">
+            <div class="mySlides4">
                 <img src="images/web2print/Book_Mockup_2.jpg">
+                <p> 1/2</p>
+            </div>
+
+            <div class="mySlides4">
                 <img src="images/web2print/web2print.jpg">
-
-
+                <p> 2/2</p>
 
             </div>
-            <div class="arrows">
-                <a> anterior </a>
-                <a> seguinte </a>
-            </div>
 
+
+
+            <a class="prev" onclick="plusSlides(-1, 3)"></a>
+            <a class="next" onclick="plusSlides(1, 3)"></a>
         </div>
+
 
     </div>
     <hr>
 
     <div class="project">
-        <div class="title-date">
-            <p class="date"> 2021 </p>
-
-
-
-        </div>
         <div>
             <p class="title"> O meu primeiro website </p>
+            <p class="date"> / 2021 </p>
         </div>
 
         <div class="description">
@@ -217,7 +276,7 @@
         </div>
 
 
-        <div class="carousel">
+        <div class="slideshow-container">
             <div class="images">
                 <!-- <video autoplay="" muted="" loop="" style="width: 100%;">
                     <source src="images/website/my-first-website (2).mp4" type="video/mp4">
@@ -226,15 +285,12 @@
                 <video autoplay muted loop playsinline style="width: 100%;">
                     <source src="images/website/my-first-website (2).mp4" type="video/mp4">
                 </video>
-                
-               
+
+
 
             </div>
 
-            <div class="arrows" style="display: none;">
-                <a> anterior </a>
-                <a> seguinte </a>
-            </div>
+
 
         </div>
 
@@ -242,14 +298,11 @@
     <hr>
 
     <div class="project">
-        <div class="title-date">
-            <p> 2021 </p>
 
-
-
-        </div>
         <div class="title-date">
             <p> 3 tipos de letra modulares </p>
+            <p> / typography </p>
+            <p> / 2021 </p>
         </div>
 
         <div class="description">
@@ -264,39 +317,74 @@
         </div>
 
 
-        <div class="carousel">
-            <div class="images">
+
+        <div class="slideshow-container">
+            <div class="mySlides5">
+
                 <img src="images/modular type/modular-type10.jpg">
+                <p> 1/10</p>
 
+            </div>
+
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type2.jpg">
+                <p> 2/10</p>
+            </div>
+
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type3.jpg">
+                <p> 3/10</p>
+            </div>
+
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type4.jpg">
+                <p> 4/10</p>
+
+            </div>
+
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type5.jpg">
+                <p> 5/10</p>
+
+            </div>
+
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type6.jpg">
+                <p> 6/10</p>
+            </div>
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type7.jpg">
+                <p> 7/10</p>
+            </div>
+
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type8.jpg">
+                <p> 8/10</p>
+
+            </div>
+
+
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type9.jpg">
+                <p>9/10</p>
+
+            </div>
+            <div class="mySlides5">
                 <img src="images/modular type/modular-type.jpg">
-                <img src="images/modular type/modular-type11.jpg">
-                <!-- <img src="images/modular type/modular-type12.jpg"> -->
-
+                <p> 10/10</p>
             </div>
 
-            <div class="arrows">
-                <a> anterior </a>
-                <a> seguinte </a>
-            </div>
-
+            <a class="prev" onclick="plusSlides(-1, 4)"></a>
+            <a class="next" onclick="plusSlides(1, 4)"></a>
         </div>
 
     </div>
     <hr>
     <div class="project">
-        <div class="title-date">
-            <p> 2021 </p>
-        </div>
+
         <div class="title-date">
             <p> Alta&Baixa </p>
+            <p> / 2021 </p>
         </div>
 
         <div class="description">
@@ -313,38 +401,58 @@
 
         </div>
 
-
-        <div class="carousel" id="carousel2">
-            <div class="images">
-
+        <div class="slideshow-container">
+            <div class="mySlides6">
                 <img src="images/alta&baixa/alta&baixa2.jpg">
+                <p> 1/6</p>
+            </div>
+
+            <!-- <div class="mySlides6">
                 <img src="images/alta&baixa/alta&baixa3.jpg">
+                <p> 2/4</p>
+
+            </div> -->
+            <div class="mySlides6">
                 <img src="images/alta&baixa/alta&baixa5.jpg">
+                <p> 2/6</p>
+            </div>
+
+            <div class="mySlides6">
                 <img src="images/alta&baixa/alta&baixa6.jpg">
+                <p>3/6</p>
+            </div>
+
+
+            <div class="mySlides6">
                 <img src="images/alta&baixa/alta&baixa7.jpg">
+                <p> 4/6</p>
+            </div>
+
+            <div class="mySlides6">
                 <img src="images/alta&baixa/alta&baixa8.jpg">
+                <p> 5/6</p>
+            </div>
+
+
+            <div class="mySlides6">
                 <img src="images/alta&baixa/alta&baixa.jpg">
-                <!-- <img src="images/alta&baixa/alta&baixa4.jpg"> -->
+                <p> 6/6</p>
             </div>
+            <!-- <div class="mySlides6">
+                <img src="images/alta&baixa/alta&baixa4.jpg">
+                <p> 4/4</p>
+            </div> -->
 
-            <div class="arrows">
-                <a> anterior </a>
-                <a> seguinte </a>
-            </div>
-
+            <a class="prev" onclick="plusSlides(-1, 5)"></a>
+            <a class="next" onclick="plusSlides(1, 5)"></a>
         </div>
-
     </div>
     <hr>
     <div class="project">
+
         <div class="title-date">
-            <p class="date"> 2019 </p>
-
-
-
-        </div>
-        <div>
-            <p class="title"> Coleção NOVO </p>
+            <p> Coleção NOVO </p>
+            <p> / 2019 </p>
         </div>
 
         <div class="description">
@@ -362,26 +470,53 @@
         </div>
 
 
-        <div class="carousel">
-            <div class="images">
+
+        <div class="slideshow-container">
+            <div class="mySlides7">
                 <img src="images/novo/novo.jpg">
+                <p> 1/8</p>
+            </div>
+
+
+            <div class="mySlides7">
                 <img src="images/novo/novo2.jpg">
-                <img src="images/novo/novo3.jpg">
-                <img src="images/novo/novo12.jpg">
+                <p> 2/8</p>
+            </div>
+
+            <div class="mySlides7">
                 <img src="images/novo/novo4.jpg">
-                <img src="images/novo/novo5.jpg">
-                <img src="images/novo/novo6.jpg">
-                <!-- <img src="images/novo/novo7.jpg" > -->
+                <p> 3/8</p>
+            </div>
+
+
+            <div class="mySlides7">
                 <img src="images/novo/novo8.jpg">
+                <p> 4/8</p>
+            </div>
+
+            <div class="mySlides7">
                 <img src="images/novo/novo10.jpg">
+                <p> 5/8</p>
+            </div>
+
+            <div class="mySlides7">
+                <img src="images/novo/novo5.jpg">
+                <p> 6/8</p>
+            </div>
+
+            <div class="mySlides7">
+                <img src="images/novo/novo6.jpg">
+                <p> 7/8</p>
+            </div>
+
+
+            <div class="mySlides7">
                 <img src="images/novo/novo11.jpg">
-
-            </div>
-            <div class="arrows">
-                <a> anterior </a>
-                <a> seguinte </a>
+                <p> 8/8</p>
             </div>
 
+            <a class="prev" onclick="plusSlides(-1, 6)"></a>
+            <a class="next" onclick="plusSlides(1, 6)"></a>
         </div>
 
 
@@ -396,91 +531,102 @@
 </body>
 
 <script>
+    // async function fetchLanguageData(lang) {
+    //     const response = await fetch(`languages/${lang}.json`);
+    //     return response.json();
+    // }
 
+    // // Function to set the language preference
+    // function setLanguagePreference(lang) {
+    //     localStorage.setItem('language', lang);
+    //     location.reload();
+    // }
 
-    // function initializeCarousel(carousel) {
-    //     const images = carousel.querySelector('.images');
-    //     const imageWidth = carousel.offsetWidth;
-    //     let currentIndex = 0;
-
-    //     function showImage(index) {
-    //         const offset = -index * imageWidth;
-    //         images.style.transform = `translateX(${offset}px)`;
-    //     }
-
-    //     showImage(currentIndex);
-
-    //     carousel.querySelector('.arrows a:nth-child(1)').addEventListener('click', function () {
-    //         // Previous button clicked, navigate to the previous image
-    //         currentIndex = (currentIndex - 1 + images.children.length) % images.children.length;
-    //         showImage(currentIndex);
-    //     });
-
-    //     carousel.querySelector('.arrows a:nth-child(2)').addEventListener('click', function () {
-    //         // Next button clicked, navigate to the next image
-    //         currentIndex = (currentIndex + 1) % images.children.length;
-    //         showImage(currentIndex);
+    // // Function to update content based on selected language
+    // async function updateContent() {
+    //     const lang = localStorage.getItem('language') || 'en'; // Default language is English
+    //     const langData = await fetchLanguageData(lang);
+    //     document.querySelectorAll('[data-i18n]').forEach(element => {
+    //         const key = element.getAttribute('data-i18n');
+    //         element.textContent = langData[key];
     //     });
     // }
-    function initializeCarousel(carousel) {
-        const images = carousel.querySelector('.images');
-        const imageWidth = carousel.offsetWidth;
-        let currentIndex = 0;
 
-        function showImage(index) {
-            const offset = -index * imageWidth;
-            images.style.transform = `translateX(${offset}px)`;
+    // // Initialize
+    // updateContent();
+
+    async function fetchLanguageData(lang) {
+        const response = await fetch(`languages/${lang}.json`);
+        return response.json();
+    }
+
+    // Function to set the language preference
+    function setLanguagePreference(lang) {
+        localStorage.setItem('language', lang);
+        location.reload();
+    }
+
+    // Function to update content based on selected language
+    async function updateContent() {
+        const lang = localStorage.getItem('language') || 'en'; // Default language is English
+        const langData = await fetchLanguageData(lang);
+
+        // Check if langData is undefined or null
+        if (!langData) {
+            console.error('Language data is undefined or null.');
+            return;
         }
 
-        showImage(currentIndex);
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            let text = langData[key];
 
-        const previousLink = carousel.querySelector('.arrows a:nth-child(1)');
-        const nextLink = carousel.querySelector('.arrows a:nth-child(2)');
+            // Check if text is undefined or null
+            if (!text) {
+                console.error(`Text for key '${key}' is undefined or null.`);
+                return;
+            }
 
-        previousLink.addEventListener('click', function () {
-            // Previous button clicked, navigate to the previous image
-            currentIndex = (currentIndex - 1 + images.children.length) % images.children.length;
-            showImage(currentIndex);
-            // Set link color to orange and revert it back after a short delay
-            previousLink.style.color = "orangered";
-            setTimeout(() => {
-                previousLink.style.color = "#202020"; // Default color
-            }, 200); // Adjust the delay (in milliseconds) as needed
-        });
+            // Replace links
+            text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
 
-        nextLink.addEventListener('click', function () {
-            // Next button clicked, navigate to the next image
-            currentIndex = (currentIndex + 1) % images.children.length;
-            showImage(currentIndex);
-            // Set link color to orange and revert it back after a short delay
-            nextLink.style.color = "orangered";
-            setTimeout(() => {
-                nextLink.style.color = "#202020"; // Default color
-            }, 200); // Adjust the delay (in milliseconds) as needed
+            // Replace italicized text
+            text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            // Replace bold text
+            text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            element.innerHTML = text;
         });
     }
 
+    updateContent();
 
 
+    let slideIndex = [];
+    let slideId = [];
 
+    // Initialize slideIndex and slideId arrays for each slideshow
+    for (let i = 0; i < document.querySelectorAll('.slideshow-container').length; i++) {
+        slideIndex.push(1);
+        slideId.push("mySlides" + (i + 1));
+        showSlides(1, i);
+    }
 
-    // Reinitialize carousels on resize
-    // window.addEventListener('resize', function () {
-    //     const carousels = document.querySelectorAll('.carousel');
-    //     carousels.forEach(initializeCarousel);
-    // });
+    // Function to navigate through slides
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
 
-    // Initialize carousels on page load
-    document.addEventListener('DOMContentLoaded', function () {
-        const carousels = document.querySelectorAll('.carousel');
-        carousels.forEach(initializeCarousel);
-    });
-
-//     window.addEventListener('resize', function () {
-//     // This function will be called every time the window is resized
-//     const carousels = document.querySelectorAll('.carousel');
-//     carousels.forEach(initializeCarousel);
-// });
+    // Function to display slides
+    function showSlides(n, no) {
+        let i;
+        let x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) { slideIndex[no] = 1 }
+        if (n < 1) { slideIndex[no] = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+    }
 
 
 

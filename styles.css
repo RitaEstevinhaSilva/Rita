@@ -50,6 +50,12 @@ body::-webkit-scrollbar {
     font-family: "tablet-gothic-wide", sans-serif;
     font-weight: 400;
     font-style: normal;
+    /* background-color: whitesmoke; */
+    /* border-bottom: #202020;
+    border-bottom: 0.5px; */
+    /* mix-blend-mode: exclusion; */
+
+
 }
 
 #my-name {
@@ -57,43 +63,46 @@ body::-webkit-scrollbar {
     /* font-family: "tablet-gothic-wide", sans-serif; */
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
+    font-size: 48px;
     margin-left: 8px;
     position: relative;
     text-decoration: none;
+
 }
+
 #my-name:hover {
     /* animation: shake 0.5s ease;  */
     color: orangered;
 }
 
-.about-project{
+.about-project {
     text-decoration: none;
 }
 
 
 
-.arrows{
+/* .arrows{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     justify-content: space-between;
-    padding-top:8px;
+    padding-top:8px; 
 
 }
 
 
 
-.arrows a:hover{
+
+/* .arrows a:hover{
  
     cursor: pointer;
-}
+} */
 
 
 
 
 .space {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 /* Links */
@@ -129,8 +138,8 @@ a:hover {
     font-weight: 400;
     font-style: normal;
     display: grid;
-    font-size: 15px;
-    grid-template-columns: 5vw 15vw 30vw auto;
+    font-size: 14px;
+    grid-template-columns: 15vw 25vw auto;
     gap: 15px;
     padding: 10px;
     box-sizing: border-box;
@@ -150,10 +159,6 @@ a:hover {
 
 
 
-
-
-
-
 hr {
     display: flex;
     justify-content: center;
@@ -167,17 +172,12 @@ hr {
 }
 
 
-
-
-
-
-
 .title-date p {
     margin-bottom: 8px;
     font-family: "tablet-gothic-wide", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 14px;
     /* text-decoration: underline; */
 }
 
@@ -187,8 +187,82 @@ hr {
 
 
 
+/* SLIDERS */
+.mySlides1,
+.mySlides2 {
+    display: none
+}
 
-.carousel {
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container img {
+    width: 100%;
+
+
+}
+
+/* .hidden {
+    visibility: hidden;
+} */
+
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    /* margin: auto; */
+    width: 100%;
+}
+
+.slideshow-container p{
+    margin-top: 8px;
+    display: flex;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    /* bottom: 0%; */
+    width: 51%;
+    /* width: auto; */
+    /* padding: 16px; */
+    color: white;
+    /* font-weight: bold; */
+    /* font-size: 15px; */
+    transition: all 0.6s ease 0s;
+    user-select: none;
+    mix-blend-mode: exclusion;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    /* border-radius: 3px 0 0 3px; */
+}
+
+.prev:hover {
+    cursor: url('left-arrow.svg'), auto;
+   
+}
+
+.next:hover {
+    cursor: url('right-arrow.svg'), auto;
+}
+
+/* On hover, add a grey background color */
+/* .prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+} */
+
+/* .carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -196,14 +270,10 @@ hr {
 
 .carousel {
     cursor: default;
-}
+} */
 
 
-.images {
-    display: flex;
 
-    transition: transform 0.5s ease;
-}
 
 .images img {
     width: 100%;
@@ -220,7 +290,7 @@ hr {
 
 .about p {
     font-family: "tablet-gothic-wide", sans-serif;
-    font-weight:400;
+    font-weight: 400;
     font-style: normal;
     margin-bottom: 8px;
     font-size: 15px;
@@ -246,15 +316,15 @@ hr {
 }
 
 .about img {
-   width: 100%;
-   object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 .skills p {
     margin: 0;
 }
 
-.div-space-bottom{
+.div-space-bottom {
     margin-bottom: 30px;
 }
 
@@ -264,17 +334,20 @@ hr {
     flex-direction: column;
     /* justify-content: space-between; */
 }
-.new-div-info{
+
+.new-div-info {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding-top: 10px;
     margin: 0;
 }
-.new-div-info p{
-   padding: 0;
+
+.new-div-info p {
+    padding: 0;
     margin: 0;
 }
+
 #social-media {
     box-sizing: border-box;
     display: flex;
@@ -282,11 +355,11 @@ hr {
     margin-bottom: 30px;
 }
 
-.new-div-section{
+.new-div-section {
     padding-bottom: 30px;
 }
 
-.new-div-section h1{
+.new-div-section h1 {
     font-family: "tablet-gothic-wide", sans-serif;
     font-weight: 400;
     /* font-style: italic; */
@@ -297,11 +370,11 @@ hr {
 }
 
 
-.title-media-small{
+.title-media-small {
     display: none;
 }
 
-.title-media-small p{
+.title-media-small p {
     font-size: 8px;
 }
 
@@ -311,13 +384,14 @@ hr {
     margin: 0;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     padding: 10px;
     box-sizing: border-box;
 }
-.footer p{ 
+
+.footer p {
     font-family: "tablet-gothic-wide", sans-serif;
     font-weight: 400;
     /* font-style: italic; */
@@ -332,51 +406,69 @@ hr {
 
         grid-template-columns: 1fr;
         gap: 0;
+        padding: 20px;
 
         /* Set to one column on smaller screens */
     }
 
-    #grid-titles{
+    #grid-titles {
         display: none;
     }
-   .title-media-small{
-    display: flex;
-    flex-direction: column;
-   }
 
-   .hr-1{
-    display: none;
-   }
-   .title-media-small p{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-   }
-
-    .carousel {
-        height: 100%;
-        /* margin-bottom: -80px; */
-        /* margin-top: -50px; */
-        /* margin-bottom: -50px; */
+    .title-media-small {
+        display: flex;
+        flex-direction: column;
     }
 
-    .space-top{
+    hr {
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+
+    .slideshow-container{
+        margin-top: 20px;
+    }
+
+    .slideshow-container p{
+        margin-top: 10px;
+        display: flex;
+        justify-content:left;
+    }
+
+    .title-media-small p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+ 
+    .space-top {
         margin-top: 10px;
     }
 
+    .hr-1{display: none;}
+  
+#header{
+    padding: 20px;
+}
     #my-name {
-        font-size: 30px;
+        font-size: 40px;
+    /* padding-left: 12px; */
     }
 
     .about {
         grid-template-columns: 1fr;
         gap: 0;
+        padding: 20px;
     }
-    #grid-titles-about{
+
+    #grid-titles-about {
         display: none;
     }
-    .footer{
+
+    .footer {
         display: flex;
         flex-direction: column;
+        padding-left: 20px;
     }
 }

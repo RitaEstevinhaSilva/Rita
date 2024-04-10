@@ -1,0 +1,14 @@
+{
+    "p1-classification-1": "/ Web Development",
+    "p1-classification-2": "/ Generative Design",
+    "p1-description": "[DynamicIDioms: towards visual languages](https://anaestevinha.dei.uc.pt/) is a web-based tool that aims to provide users with a comprehensive tool kit for the development of dynamic visual systems. This is achieved by allowing users to employ different variation mechanisms to manipulate their own graphic elements, which can be uploaded in SVG format.",
+    "p1-description-2":"The tool can be used for free experimentation, which can contribute to finding novel creative possibilities for the development of personal designs and visual identities; or to develop materials that can answer the needs of a specific design request.",
+    "p1-mixed-text": "This text contains *italicized* and **bold** parts, and also includes a [link](https://example.com).",
+
+    "p2-name": "Computational Tools for the Development of Dynamic Visual Identities",
+    "p2-class-1":"/ Research",
+    "p2-class-2":"/ Editorial Design"
+    
+    
+  
+}
