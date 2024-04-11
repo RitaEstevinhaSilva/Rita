@@ -50,6 +50,7 @@ body::-webkit-scrollbar {
     font-family: "tablet-gothic-wide", sans-serif;
     font-weight: 400;
     font-style: normal;
+    /* mix-blend-mode: exclusion; */
     /* background-color: whitesmoke; */
     /* border-bottom: #202020;
     border-bottom: 0.5px; */
@@ -67,12 +68,14 @@ body::-webkit-scrollbar {
     margin-left: 8px;
     position: relative;
     text-decoration: none;
+    /* color: whitesmoke; */
 
 }
 
 #my-name:hover {
     /* animation: shake 0.5s ease;  */
     color: orangered;
+    /* mix-blend-mode: none; */
 }
 
 .menu a{
@@ -236,7 +239,7 @@ img {
 .prev,
 .next {
 
-    cursor: pointer;
+    /* cursor: pointer; */
     position: absolute;
     top: 0;
     height: 100%;
@@ -466,11 +469,13 @@ img {
 
     #header {
         padding: 20px;
+      
     }
 
     #my-name {
         font-size: 40px;
         /* padding-left: 12px; */
+     
     }
 
     .about {
