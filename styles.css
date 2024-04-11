@@ -78,6 +78,11 @@ body::-webkit-scrollbar {
     /* mix-blend-mode: none; */
 }
 
+.menu{
+  display: flex;
+  align-items: baseline;
+}
+
 .menu a{
     font-size: 18px;
     text-decoration: none;
@@ -399,6 +404,12 @@ img {
     font-size: 10px;
 }
 
+.language a{
+  
+    font-size: 10px;
+
+}
+
 /* Media query for smaller screens */
 @media screen and (max-width: 850px) {
 
@@ -481,8 +492,7 @@ img {
         margin-left: 3px;
     }
     
-    
-
+   
     .about {
         grid-template-columns: 1fr;
         gap: 0;
