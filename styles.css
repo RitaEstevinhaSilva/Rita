@@ -271,21 +271,6 @@ img {
     cursor: url('right-arrow.svg'), pointer;
 }
 
-/* On hover, add a grey background color */
-/* .prev:hover, .next:hover {
-  background-color: #f1f1f1;
-  color: black;
-} */
-
-/* .carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.carousel {
-    cursor: default;
-} */
 
 
 
@@ -468,15 +453,36 @@ img {
     }
 
     #header {
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        /* padding: 20px; */
       
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        background-color: whitesmoke;
+    }
+
+    .menu a{
+        margin: 0;
+        margin-right:10px;
+    }
+   
+    .space{
+        padding-top: 100px;
     }
 
     #my-name {
         font-size: 40px;
         /* padding-left: 12px; */
+        background-color: whitesmoke;
+        margin: 0;
+        margin-left: 2px;
      
     }
+    
+    
 
     .about {
         grid-template-columns: 1fr;
