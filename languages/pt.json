@@ -1,11 +1,62 @@
 {
- 
-    "p1-classification-1": "/ Desenvolvimento Web",
-    "p1-classification-2": "/ Design Generativo",
-    "p1-mixed-text": "This text contains *italicized* and **bold** parts, and also includes a [link](https://example.com).",
 
-    "p2-name":"Ferramentas Computacionais para o Design de Identidades Visuais Dinâmicas",
-    "p2-class-1":"/ Investigação",
-    "p2-class-2":"/ Design Editorial"
+    "p1-mixed-text": "This text contains *italicized* and **bold** parts, and also includes a [link](https://example.com).",
     
+    "about":"SOBRE",
+    "work":"PROJETOS",
+
+    "p1-name":"[*DynamicIDioms: Towards Visual Languages*](https://anaestevinha.dei.uc.pt/)",
+    "p1-classification-1": "/ Desenvolvimento Web (HTML, CSS, JavaScript)",
+    "p1-classification-2": "/ Design Generativo",
+    "p1-description": "*DynamicIDioms* é uma ferramenta computacional que pretende ensinar metodologias para o desenvolvimento de identidades visuais dinâmicas e sistemas flexíveis, através da exploração de diferentes mecanismos de variação e da manipulação de diferentes elementos gráficos.",
+    "p1-description-2":"Desenvolvida e conceptualizada como objeto da investigação feita para a minha dissertação de mestrado.",
+    
+    "p2-name": "[Ferramentas Computacionais para o Design de Identidades Visuais Dinâmicas](https://hdl.handle.net/10316/110589)",
+    "p2-class-1":"/ Investigação",
+    "p2-class-2":"/ Design Editorial",
+    "p2-description-1":"Dissertação sobre Identidades Visuais Dinâmicas e Sistemas Flexíveis resultante da investigação feita durante o Mestrado em Design e Multimédia da Universidade de Coimbra. Esta investigação culminou no desenvolvimento da ferramenta computacional *DynamicIDioms*.",
+    "p2-description-2":"Alinhada com a investigação corrente do [CDV Lab.](https://cdv.dei.uc.pt/) e orientada pelos professores João Cunha e Tiago Martins.",
+  
+    "p3-name":"*Unseen Hands: a Messy History of Women in Graphic Design*",
+    "p3-class":"/ Design Editorial",
+    "p3-description-1":"Projeto editorial feminista que pretende chamar a atenção para a ausência de nomes de mulheres na história do design gráfico.",
+    "p3-description-2": "Inspirado no projeto [Errata](https://www.errata.design/pt/) de Isabel Duarte e em textos feministas como *“Messy History vs. Neat History: Toward an Expanded View of Women in Graphic Design”* de Martha Scotford.",
+    "p3-description-3": "Orientado por Ana Boavida.",
+
+    "p4-name":"Tipos de Letra Modulares",
+    "p4-class":"/ Tipografia",
+    "p4-description-1":"Desenvolvimento e exploração de 3 tipos de letra modulares.",
+    "p4-description-2":"Orientado por Artur Rebelo e João Bicker.",
+
+    "p5-name":"Alta&Baixa",
+    "p5-class":"/ Design Editorial",
+    "p5-description-1":"Uma revista de Cultura Tipográfica que pretende refletir em diferentes aspectos da tipografia. A identidade visual faz a ponte entre o conteúdo da revista e a cidade de Coimbra, recolhendo e utilizando tipografia vernacular dos centros históricos de Coimbra, a Alta e a Baixa.",
+    "p5-description-2":"Em colaboração com Angela Laspriella, Carolina Almeida e Francisca Laureano. Orientado por Artur Rebelo.",
+
+    "p6-name": "*NOVO Design Collection*",
+    "p6-class-1":"/ Design de Produto",
+    "p6-class-2":"/ Identidade Visual",
+    "p6-description-1":"A coleção NOVO é uma coleção de mobiliário fictícia inspirada na cadeira NOVO. Esta cadeira foi desenhada e desenvolvida durante a licenciatura em Design.",
+    "p6-description-2":"O desenho da cadeira surge da exploração da forma, tirando partido das potencialidades do varão de ferro. A estrutura é uma linha contínua, como um desenho sem levantar a mão, sem pontas soltas.",
+    "p6-description-3":"A identidade visual foi desenvolvida posteriormente como um projeto pessoal.",
+
+    "about-me":"SOBRE MIM",
+    "about-1":"SOBRE MIM",
+    "skills":"*SKIILS*",
+    "skills-2":"*SKILLS*",
+    "social-media":"REDES SOCIAIS",
+    "social-media-2":"REDES SOCIAIS",
+    "me":"EU MESMA",
+    "me-2":"EU MESMA",
+    "awards":"PRÉMIOS & ENTREVISTAS",
+    "contactos":"CONTACTOS",
+
+    "about-des-1":"Sou uma designer multidisciplinar, com interesse em branding, design editorial, tipografia e design computacional.",
+    "about-des-2":"Licenciei-me em Design na Faculdade de Arquitetura da Universidade de Lisboa onde adquiri conhecimentos basilares em diversas áreas do design, desde design de produto, design gráfico e design de serviços.",
+    "about-des-3":"Após a licenciatura trabalhei como técnica de pré-impressão numa empresa de artes gráficas com intuito de aprender mais sobre artes finais, materiais e métodos de impressão. Durante este período fui reconhecida com o prémio *Young Talent Award* da Intergraf (Associação Europeia da Indústria Gráfica).",
+    "about-des-4":"Entendendo as novas necessidades de comunicação do mundo digital face ao rápido desenvolvimento das tecnologias, ingressei no Mestrado em Design e Multimédia da Universidade de Coimbra onde desenvolvi competências em design computacional, design generativo, *creative coding*, programação web e UX/UI.",
+    "about-des-5":"Atualmente estou a colaborar como freelancer com a [FBA. — Ferrand, Bicker & Associados](https://www.fba.pt/), em Coimbra.",
+
+    "footer":"Website desenhado e desenvolvido por Rita Estevinha Silva."
+
 }

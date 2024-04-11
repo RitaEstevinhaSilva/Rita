@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rita Estevinha Silva</title>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/vxb3fyb.css">
 </head>
 
 <body>
 
-   
+
     <div id="header">
         <a id="my-name" href="/"> Rita Estevinha Silva</a>
         <div class="menu">
-
-            <a class="about-project" href="about.html"> SOBRE </a>
-            <a href="#" onclick="setLanguagePreference('en')">eng </a>
-            <a href="#" onclick="setLanguagePreference('pt')">pt</a>
+            <a data-i18n="about" href="about.html">  </a>
+            <!-- <a href="https://www.instagram.com/ritaestevinhasilva/" target="_blank"> INSTAGRAM </a> -->
+            <a href="mailto:ritaestevinhasilva@gmail.com"> EMAIL </a>
+            <a href="#" onclick="setLanguagePreference('en')" id="enLink"> / ENG </a>
+            <a href="#" onclick="setLanguagePreference('pt')" id="ptLink"> / PT</a>
         </div>
     </div>
 
@@ -26,25 +28,24 @@
     <div class="space"> </div>
 
 
+  
+    </div>
     <hr>
     <div class="project">
 
         <div class="title-date">
-            <p> DynamicIDioms </p>
+            <p data-i18n="p1-name"> </p>
             <p data-i18n="p1-classification-1" style="margin-bottom: 0;"> </p>
             <p data-i18n="p1-classification-2"> </p>
 
             <p> / 2023 </p>
-
-
-            <!-- <p> Dissertação disponível no   <a id="about" href="https://hdl.handle.net/10316/110589" target="_blank"> repositório científico</a> da Universidade de Coimbra.</p> -->
 
         </div>
 
         <div class="description">
             <p data-i18n="p1-description"> </p>
             <p data-i18n="p1-description-2"> </p>
-            <p data-i18n="p1-description-3"> </p>
+            <!-- <p data-i18n="p1-description-3"> </p> -->
 
         </div>
 
@@ -103,18 +104,9 @@
         </div>
 
         <div class="description">
-            <p> <a href="https://hdl.handle.net/10316/110589" target="_blank"> Ferramentas Computacionais
-                    para o Design de Identidades Visuais Dinâmicas </a> é o resultado da investigação feita
-                para a dissertação do Mestrado em Design e Multimédia da Universidade de Coimbra.</p>
+            <p data-i18n="p2-description-1"> </p>
+            <p data-i18n="p2-description-2"> </p>
 
-            <p> Resultou na criação de uma ferramenta online que permite aos utilizadores criarem os seus própios
-                sistemas e
-                linguagens visuais. A ferramenta pretende contribuir para a aprendizagem de métodos de construção de
-                sistemas de identidade visual dinâmicos. </p>
-
-
-            <p> Alinhada com a investigação corrente do CDV Lab. (Computational Design & Visualization Lab.) e orientada
-                por João Cunha e Tiago Martins. </p>
 
         </div>
 
@@ -156,25 +148,15 @@
     <div class="project">
 
         <div class="title-date">
-            <p style="font-style: italic;"> Unseen Hands: a messy history of women in graphic design </p>
-            <p> / Editorial Design </p>
+            <p data-i18n="p3-name"> </p>
+            <p data-i18n="p3-class"> </p>
             <p> / 2022 </p>
         </div>
 
         <div class="description">
-            <p> <span style="font-style: italic;"> Unseen Hands: a messy history of women in graphic design </span> é um
-                projeto editorial feminista que pretende
-                chamar a atenção para a ausência de nomes de mulheres na história do design gráfico.</p>
-
-            <p> Este objeto editorial procura compreender e investigar contributos de mulheres ao longo
-                da história da disciplina, complementando a história convencional/linear com trabalhos e mãos
-                esquecidas.</p>
-            <p> Inspirado no projeto <a href="https://www.errata.design/pt/" target="_blank"> Errata </a>de Isabel
-                Duarte e em textos feministas nomeadamente “Messy History vs. Neat
-                History: Toward an Expanded View of Women in Graphic Design” de Martha Scotford.</p>
-            <p> Projeto académico para a disciplina de Narrativa Visual.
-                Orientado por Ana Boavida.</p>
-
+            <p data-i18n="p3-description-1"> </p>
+            <p data-i18n="p3-description-2"></p>
+            <p data-i18n="p3-description-3"></p>
         </div>
 
 
@@ -211,9 +193,9 @@
         </div>
 
     </div>
-    <hr>
 
-    <div class="project">
+    <!-- OUTROS PROJETOS  -->
+    <!-- <div class="project">
 
         <div class="title-date">
             <p> Capa do livro <span style="font-style: italic;">Web-to-Print: A Step-by-Step Guide for
@@ -227,7 +209,7 @@
                     href="https://www.amazon.com/Web-Print-Step-Step-Implementing/dp/1893347095"
                     target="_blank">Web-to-Print: A Step-by-Step Guide for
                     Implementing Web-to-Print Technology </a> da Nidhi Agrawal e do Abhishek Agarwal. </p>
-            <!-- <p> Cliente: Design'N'Buy. </p> -->
+            <p> Cliente: Design'N'Buy. </p>
 
         </div>
 
@@ -252,8 +234,8 @@
         </div>
 
 
-    </div>
-    <hr>
+    </div> -->
+    <!-- <hr>
 
     <div class="project">
         <div>
@@ -278,10 +260,10 @@
 
         <div class="slideshow-container">
             <div class="images">
-                <!-- <video autoplay="" muted="" loop="" style="width: 100%;">
+                <video autoplay="" muted="" loop="" style="width: 100%;"> 
                     <source src="images/website/my-first-website (2).mp4" type="video/mp4">
 
-                </video> -->
+                </video>
                 <video autoplay muted loop playsinline style="width: 100%;">
                     <source src="images/website/my-first-website (2).mp4" type="video/mp4">
                 </video>
@@ -294,88 +276,82 @@
 
         </div>
 
-    </div>
+    </div> -->
     <hr>
 
     <div class="project">
 
         <div class="title-date">
-            <p> 3 tipos de letra modulares </p>
-            <p> / typography </p>
+            <p data-i18n="p4-name"> </p>
+            <p data-i18n="p4-class"> </p>
             <p> / 2021 </p>
         </div>
 
         <div class="description">
-            <p> Exploração e desenvolvimento de 3 tipos de letra modulares. </p>
-            <p> Projeto académico para a disciplina
-                de Tipografia Avançada. Orientado por Artur Rebelo e João Bicker.
-            </p>
-
-
-
-
+            <p data-i18n="p4-description-1"></p>
+            <p data-i18n="p4-description-2"> </p>
         </div>
 
 
 
         <div class="slideshow-container">
-            <div class="mySlides5">
+            <div class="mySlides4">
 
                 <img src="images/modular type/modular-type10.jpg">
                 <p> 1/10</p>
 
             </div>
 
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type2.jpg">
                 <p> 2/10</p>
             </div>
 
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type3.jpg">
                 <p> 3/10</p>
             </div>
 
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type4.jpg">
                 <p> 4/10</p>
 
             </div>
 
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type5.jpg">
                 <p> 5/10</p>
 
             </div>
 
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type6.jpg">
                 <p> 6/10</p>
             </div>
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type7.jpg">
                 <p> 7/10</p>
             </div>
 
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type8.jpg">
                 <p> 8/10</p>
 
             </div>
 
 
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type9.jpg">
                 <p>9/10</p>
 
             </div>
-            <div class="mySlides5">
+            <div class="mySlides4">
                 <img src="images/modular type/modular-type.jpg">
                 <p> 10/10</p>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1, 4)"></a>
-            <a class="next" onclick="plusSlides(1, 4)"></a>
+            <a class="prev" onclick="plusSlides(-1, 3)"></a>
+            <a class="next" onclick="plusSlides(1, 3)"></a>
         </div>
 
     </div>
@@ -383,26 +359,21 @@
     <div class="project">
 
         <div class="title-date">
-            <p> Alta&Baixa </p>
+            <p data-i18n="p5-name"></p>
+            <p data-i18n="p5-class"></p>
             <p> / 2021 </p>
         </div>
 
         <div class="description">
-            <p> Alta&Baixa é uma revista de cultura tipográfica fictícia que pretende refletir sobre diferentes
-                vertentes da
-                tipografia, através da publicação de materiais históricos e contemporâneos. </p>
-            <p> A identidade gráfica faz a ponte entre o teor da revista e a cidade de Coimbra, recolhendo e utilizando
-                tipografia vernacular dos centros históricos de Coimbra (a Alta e a Baixa).</p>
-            <p> Projeto académico para a disciplina de Oficina de Design de Comunicação. Desenvolvido com Angela
-                Laspriella, Carolina Almeida e Francisca Laureano. Orientação de Artur Rebelo.
-            </p>
 
+            <p data-i18n="p5-description-1"> </p>
+            <p data-i18n="p5-description-2"> </p>
 
 
         </div>
 
         <div class="slideshow-container">
-            <div class="mySlides6">
+            <div class="mySlides5">
                 <img src="images/alta&baixa/alta&baixa2.jpg">
                 <p> 1/6</p>
             </div>
@@ -412,29 +383,29 @@
                 <p> 2/4</p>
 
             </div> -->
-            <div class="mySlides6">
+            <div class="mySlides5">
                 <img src="images/alta&baixa/alta&baixa5.jpg">
                 <p> 2/6</p>
             </div>
 
-            <div class="mySlides6">
+            <div class="mySlides5">
                 <img src="images/alta&baixa/alta&baixa6.jpg">
                 <p>3/6</p>
             </div>
 
 
-            <div class="mySlides6">
+            <div class="mySlides5">
                 <img src="images/alta&baixa/alta&baixa7.jpg">
                 <p> 4/6</p>
             </div>
 
-            <div class="mySlides6">
+            <div class="mySlides5">
                 <img src="images/alta&baixa/alta&baixa8.jpg">
                 <p> 5/6</p>
             </div>
 
 
-            <div class="mySlides6">
+            <div class="mySlides5">
                 <img src="images/alta&baixa/alta&baixa.jpg">
                 <p> 6/6</p>
             </div>
@@ -443,28 +414,24 @@
                 <p> 4/4</p>
             </div> -->
 
-            <a class="prev" onclick="plusSlides(-1, 5)"></a>
-            <a class="next" onclick="plusSlides(1, 5)"></a>
+            <a class="prev" onclick="plusSlides(-1, 4)"></a>
+            <a class="next" onclick="plusSlides(1, 4)"></a>
         </div>
     </div>
     <hr>
     <div class="project">
 
         <div class="title-date">
-            <p> Coleção NOVO </p>
+            <p data-i18n="p6-name"> </p>
+            <p data-i18n="p6-class-1" style="margin: 0;"> </p>
+            <p data-i18n="p6-class-2"> </p>
             <p> / 2019 </p>
         </div>
 
         <div class="description">
-            <p> A coleção NOVO é uma coleção de mobília fictícia inspirada na cadeira NOVO. Esta cadeira foi
-                desenvolvida na disciplina de Design IV durante a licenciatura em Design.
-            <p>
-                O desenho da cadeira surge da exploração da forma, tirando partido das potencialidades do varão de
-                ferro. A estrutura da cadeira é uma linha contínua, como um desenho sem levantar a mão, sem pontas
-                soltas.
-            </p>
-
-            <p> A identidade visual foi desenvolvida posteriormente como um projeto pessoal. </p>
+            <p data-i18n="p6-description-1"> </p>
+            <p data-i18n="p6-description-2"> </p>
+            <p data-i18n="p6-description-3"> </p>
 
 
         </div>
@@ -472,51 +439,51 @@
 
 
         <div class="slideshow-container">
-            <div class="mySlides7">
+            <div class="mySlides6">
                 <img src="images/novo/novo.jpg">
                 <p> 1/8</p>
             </div>
 
 
-            <div class="mySlides7">
+            <div class="mySlides6">
                 <img src="images/novo/novo2.jpg">
                 <p> 2/8</p>
             </div>
 
-            <div class="mySlides7">
+            <div class="mySlides6">
                 <img src="images/novo/novo4.jpg">
                 <p> 3/8</p>
             </div>
 
 
-            <div class="mySlides7">
+            <div class="mySlides6">
                 <img src="images/novo/novo8.jpg">
                 <p> 4/8</p>
             </div>
 
-            <div class="mySlides7">
+            <div class="mySlides6">
                 <img src="images/novo/novo10.jpg">
                 <p> 5/8</p>
             </div>
 
-            <div class="mySlides7">
+            <div class="mySlides6">
                 <img src="images/novo/novo5.jpg">
                 <p> 6/8</p>
             </div>
 
-            <div class="mySlides7">
+            <div class="mySlides6">
                 <img src="images/novo/novo6.jpg">
                 <p> 7/8</p>
             </div>
 
 
-            <div class="mySlides7">
+            <div class="mySlides6">
                 <img src="images/novo/novo11.jpg">
                 <p> 8/8</p>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1, 6)"></a>
-            <a class="next" onclick="plusSlides(1, 6)"></a>
+            <a class="prev" onclick="plusSlides(-1, 5)"></a>
+            <a class="next" onclick="plusSlides(1, 5)"></a>
         </div>
 
 
@@ -524,36 +491,14 @@
     <hr>
 
     <div class="footer">
-        <p>&copy; Rita Estevinha Silva, 2024. </p>
+        <p>&copy; 2024. Rita Estevinha Silva. </p>
+        <p data-i18n="footer"> </p>
     </div>
 
 
 </body>
 
 <script>
-    // async function fetchLanguageData(lang) {
-    //     const response = await fetch(`languages/${lang}.json`);
-    //     return response.json();
-    // }
-
-    // // Function to set the language preference
-    // function setLanguagePreference(lang) {
-    //     localStorage.setItem('language', lang);
-    //     location.reload();
-    // }
-
-    // // Function to update content based on selected language
-    // async function updateContent() {
-    //     const lang = localStorage.getItem('language') || 'en'; // Default language is English
-    //     const langData = await fetchLanguageData(lang);
-    //     document.querySelectorAll('[data-i18n]').forEach(element => {
-    //         const key = element.getAttribute('data-i18n');
-    //         element.textContent = langData[key];
-    //     });
-    // }
-
-    // // Initialize
-    // updateContent();
 
     async function fetchLanguageData(lang) {
         const response = await fetch(`languages/${lang}.json`);
@@ -570,6 +515,14 @@
     async function updateContent() {
         const lang = localStorage.getItem('language') || 'en'; // Default language is English
         const langData = await fetchLanguageData(lang);
+
+        if (lang === 'en') {
+            document.getElementById('enLink').style.display = 'none';
+            document.getElementById('ptLink').style.display = 'inline';
+        } else if (lang === 'pt') {
+            document.getElementById('ptLink').style.display = 'none';
+            document.getElementById('enLink').style.display = 'inline';
+        }
 
         // Check if langData is undefined or null
         if (!langData) {
@@ -629,10 +582,6 @@
     }
 
 
-
-
-
 </script>
-
 
 </html>

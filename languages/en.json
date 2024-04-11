@@ -1,14 +1,62 @@
 {
-    "p1-classification-1": "/ Web Development",
-    "p1-classification-2": "/ Generative Design",
-    "p1-description": "[DynamicIDioms: towards visual languages](https://anaestevinha.dei.uc.pt/) is a web-based tool that aims to provide users with a comprehensive tool kit for the development of dynamic visual systems. This is achieved by allowing users to employ different variation mechanisms to manipulate their own graphic elements, which can be uploaded in SVG format.",
-    "p1-description-2":"The tool can be used for free experimentation, which can contribute to finding novel creative possibilities for the development of personal designs and visual identities; or to develop materials that can answer the needs of a specific design request.",
     "p1-mixed-text": "This text contains *italicized* and **bold** parts, and also includes a [link](https://example.com).",
 
-    "p2-name": "Computational Tools for the Development of Dynamic Visual Identities",
+    "about":"ABOUT",
+    "work":"WORK",
+
+    "p1-classification-1": "/ Web Development (HTML, CSS, JavaScript)",
+    "p1-classification-2": "/ Generative Design",
+    "p1-name":"[DynamicIDioms: Towards Visual Languages](https://anaestevinha.dei.uc.pt/)",
+    "p1-description": "A web-based tool that aims to provide users with a comprehensive tool kit for the development of dynamic visual systems, by allowing them to explore different variation mechanisms and manipulate their own graphic elements.",
+    "p1-description-2":"Developed and conceptualised as part of my Master's Degree Dissertation.",
+    
+    "p2-name": "[Computational Tools for the Development of Dynamic Visual Identities](https://hdl.handle.net/10316/110589)",
     "p2-class-1":"/ Research",
-    "p2-class-2":"/ Editorial Design"
-    
-    
+    "p2-class-2":"/ Editorial Design",
+    "p2-description-1": "The research on Dynamic Visual Identities and Flexible Visual Systems carried out as part of the Dissertation of the Master's in Design and Multimedia at the University of Coimbra (PT). It culminated on the development of DynamicIDioms: Towards Visual Languages.",
+    "p2-description-2":"Aligned with the current research of the [CDV Lab.](https://cdv.dei.uc.pt/) and developed under the supervision of João Cunha and Tiago Martins.",
   
+    "p3-name":"Unseen Hands: a Messy History of Women in Graphic Design",
+    "p3-class":"/ Editorial Design",
+    "p3-description-1":"A feminist editorial project that aims to call out to the absence of women's names in the history of graphic design.",
+    "p3-description-2": "Inspired on the project [*Errata*](https://www.errata.design/pt/) and feminist texts  such as “Messy History vs. Neat History: Toward an Expanded View of Women in Graphic Design” from Martha Scotford.",
+    "p3-description-3": "Oriented by Ana Boavida.",
+
+    "p4-name":"Modular Type",
+    "p4-class":"/ Typography",
+    "p4-description-1":"Development and exploration of 3 modular typefaces.",
+    "p4-description-2":"Oriented by Artur Rebelo and João Bicker.",
+
+    "p5-name":"Alta&Baixa",
+    "p5-class":"/ Editorial Design",
+    "p5-description-1":"A magazine that aims to reflect on different aspects of typography. Its visual identity seamlessly connects the magazine's content to the essence of Coimbra by sourcing vernacular typography from the historic centers of Alta and Baixa.",
+    "p5-description-2":"In collaboration with Angela Laspriella, Carolina Almeida and Francisca Laureano. Oriented by Artur Rebelo.",
+
+    "p6-name": "NOVO Design Collection",
+    "p6-class-1":"/ Product Design",
+    "p6-class-2":"/ Visual Identity",
+    "p6-description-1":"The NOVO collection is a fictional furniture line inspired by the innovative NOVO chair, which was developed in the Design IV course during my bachelor's degree.",
+    "p6-description-2":"Crafted from iron rod, the chair's design capitalizes on the material's inherent potential, resulting in a seamless, continuous structure resembling a fluid, uninterrupted line drawing.",
+    "p6-description-3":"Subsequently, the visual identity was developed as a personal project.",
+
+    "about-me":"ABOUT ME",
+    "about-1":"ABOUT ME",
+    "skills":"SKIILS",
+    "skills-2":"SKILLS",
+    "social-media":"SOCIAL MEDIA",
+    "social-media-2":"SOCIAL MEDIA",
+    "me":"ME, MYSELF & I",
+    "me-2":"ME, MYSELF & I",
+    "awards":"AWARDS & INTERVIEWS",
+    "contactos":"CONTACTS",
+
+    "about-des-1": "I am a multidisciplinary designer, with interests in branding, editorial design, typography, and computational design.",
+    "about-des-2": "I graduated in Design from the Faculty of Architecture at the University of Lisbon, where I acquired fundamental knowledge in various design domains, including product design, graphic design, and service design.",
+    "about-des-3": "After graduation, I worked as a prepress technician at a printing company to learn more about prepress, materials, and printing methods. During this period, I was recognized with the Young Talent Award from Intergraf (European Association of the Graphic Industry).",
+    "about-des-4": "In recognition of the evolving communication landscape amidst rapid technological advancements, I pursued a Master's degree in Design and Multimedia at the University of Coimbra. Throughout this enriching journey, I honed my expertise in cutting-edge disciplines such as computational design, generative design, creative coding, web programming, and UX/UI.",
+    "about-des-5": "Currently, I am collaborating as a freelancer with [FBA. — Ferrand, Bicker & Associados](https://www.fba.pt/), in Coimbra.",
+
+
+    "footer":"Website designed and developed by Rita Estevinha Silva."
+
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rita Estevinha Silva</title>
-    <!-- <script src="script.js"></script> -->
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/vxb3fyb.css">
 </head>
@@ -14,7 +14,11 @@
     <div id="header">
         <a id="my-name" href="/"> Rita Estevinha Silva</a>
         <div class="menu">
-            <a class="about-project" href="/"> PROJETOS </a>
+            <a data-i18n="work" href="/"> </a>
+            <!-- <a href="https://www.instagram.com/ritaestevinhasilva/" target="_blank"> INSTAGRAM </a> -->
+            <a href="mailto:ritaestevinhasilva@gmail.com"> EMAIL </a>
+            <a href="#" onclick="setLanguagePreference('en')" id="enLink1"> / ENG </a>
+            <a href="#" onclick="setLanguagePreference('pt')" id="ptLink1"> / PT </a>
             <!-- <p> PT / ENG</p> -->
         </div>
     </div>
@@ -23,16 +27,16 @@
 
     <div class="about" id="grid-titles-about">
         <div>
-            <p> SOBRE MIM </p>
+            <p data-i18n="about-me">  </p>
         </div>
         <div>
-            <p style="font-style: italic;"> SKILLS </p>
+            <p data-i18n="skills"> </p>
         </div>
         <div>
-            <p style="font-style: italic;"> SOCIAL MEDIA</p>
+            <p  data-i18n="social-media"> </p>
         </div>
         <div>
-            <p> EU MESMA </p>
+            <p data-i18n="me">  </p>
         </div>
     </div>
 
@@ -41,41 +45,27 @@
 
     <div class="about">
         <div class="title-media-small">
-            <p> ABOUT </p>
+            <p data-i18n="about-1">  </p>
             <hr class="hr-after">
         </div>
         <div class="space-top div-space-bottom">
-            <p> (Figueira da Foz, 1999) </p>
-            <p>
-               Uma designer multidisciplinar, com especial interesse em branding, design editorial e design
-                computacional.
-            </p>
+            <p> / 1999, Figueira da Foz, PT </p>
+            <p data-i18n="about-des-1"> </p>
 
-            <p> Licenciei-me em Design pela Faculdade de Arquitetura da Universidade de Lisboa, onde adquiri ferramentas
-                e conhecimentos basilares sobre diversas àreas do design, desde design de produto, gráfico e de
-                serviços.
-            </p>
+            <p data-i18n="about-des-2"> </p>
+            <p data-i18n="about-des-3"> </p>
 
-            <p>
-                Após a licenciatura trabalhei como técnica de pré-impressão numa empresa de artes gráficas com intuito
-                de aprender mais sobre artes finais, materiais e métodos de impressão. Durante este período fui
-                reconhecida com o prémio Young Talent Award da Intergraf (Associação Europeia da Indústria Gráfica), com
-                uma análise e reflexão sobre o futuro das artes gráficas e de uma indústria cada vez mais envelhecida.
-            </p>
-            <p> Entendendo as transformações da disciplina face ao rápido desenvolvimento das tecnologias e reconhecendo
-                as novas necessidades de comunicação do mundo digital, ingressei no Mestrado em Design e Multimédia da
-                Universidade de Coimbra onde desenvolvi competências em design computacional, design generativo,
-                creative coding, programação web e UX/UI.</p>
+            <p  data-i18n="about-des-4"> </p>
+            <p  data-i18n="about-des-5"> </p>
 
-            <p> Atualmente estou a colaborar como freelancer com a <a href="https://www.fba.pt/"> FBA. </a>
-            </p>
+            
 
         </div>
 
 
 
         <div class="title-media-small">
-            <p> SKILLS </p>
+            <p data-i18n="skills-2">  </p>
             <hr class="hr-after">
         </div>
         <div class="skills space-top">
@@ -92,7 +82,7 @@
                 <p>CorelDRAW</p>
             </div>
             <div class="new-div-section">
-                <h1> PRÉMIOS & ENTREVISTAS </h1>
+                <h1 data-i18n="awards"> </h1>
                 <hr class="hr-after">
                 <div class="new-div-info">
                     <a href="https://www.intergraf.eu/communications/press-releases/item/327-congratulations-to-the-winners-of-the-2021-intergraf-young-talent-award"
@@ -106,7 +96,7 @@
         </div>
 
         <div class="title-media-small">
-            <p style="font-style: italic;"> SOCIAL MEDIA </p>
+            <p data-i18n="social-media-2">  </p>
             <hr class="hr-after">
         </div>
 
@@ -118,7 +108,7 @@
             </div>
 
             <div class="new-div-section">
-                <h1> CONTACTOS </h1>
+                <h1 data-i18n="contactos"> </h1>
                 <hr class="hr-after">
                 <div class="new-div-info">
                     <p> (+351) 913 627 432</p>
@@ -138,7 +128,7 @@
 
 
         <div class="title-media-small">
-            <p> EU MESMA </p>
+            <p data-i18n="me-2"></p>
             <hr class="hr-after">
         </div>
         <div>
@@ -152,9 +142,73 @@
 
 
     <div class="footer">
-        <p>&copy; Rita Estevinha Silva, 2024. </p>
+        <p>&copy; 2024, Rita Estevinha Silva. </p>
+        <p data-i18n="footer"> </p>
 
     </div>
 
 
 </body>
+
+<script>
+    async function fetchLanguageData(lang) {
+        const response = await fetch(`languages/${lang}.json`);
+        return response.json();
+    }
+
+    // Function to set the language preference
+    function setLanguagePreference(lang) {
+        localStorage.setItem('language', lang);
+        location.reload();
+    }
+
+    // Function to update content based on selected language
+    async function updateContent() {
+        const lang = localStorage.getItem('language') || 'en'; // Default language is English
+        const langData = await fetchLanguageData(lang);
+
+        if (lang === 'en') {
+            document.getElementById('enLink1').style.display = 'none';
+            document.getElementById('ptLink1').style.display = 'inline';
+
+        } else if (lang === 'pt') {
+            document.getElementById('ptLink1').style.display = 'none';
+            document.getElementById('enLink1').style.display = 'inline';
+        }
+
+
+        // Check if langData is undefined or null
+        if (!langData) {
+            console.error('Language data is undefined or null.');
+            return;
+        }
+
+        document.querySelectorAll('[data-i18n]').forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            let text = langData[key];
+
+            // Check if text is undefined or null
+            if (!text) {
+                console.error(`Text for key '${key}' is undefined or null.`);
+                return;
+            }
+
+            // Replace links
+            text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+
+            // Replace italicized text
+            text = text.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            // Replace bold text
+            text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            element.innerHTML = text;
+        });
+    }
+
+    updateContent();
+
+
+
+
+</script>
+
+</html>
