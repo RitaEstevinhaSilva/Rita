@@ -252,7 +252,7 @@ img {
     /* font-size: 15px; */
     transition: all 0.6s ease 0s;
     user-select: none;
-    mix-blend-mode: exclusion;
+   
 
 }
 
@@ -263,12 +263,12 @@ img {
 }
 
 .prev:hover {
-    cursor: url('left-arrow.svg'), auto;
+    cursor: url('left-arrow.svg'), pointer;
 
 }
 
 .next:hover {
-    cursor: url('right-arrow.svg'), auto;
+    cursor: url('right-arrow.svg'), pointer;
 }
 
 /* On hover, add a grey background color */
