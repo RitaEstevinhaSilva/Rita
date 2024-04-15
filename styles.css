@@ -470,6 +470,7 @@ img {
     #header {
         display: flex;
         flex-direction: column;
+        /* padding: 10px; */
         /* padding: 20px; */
       
     }
@@ -493,7 +494,7 @@ img {
         /* padding-left: 12px; */
         background-color: whitesmoke;
         margin: 0;
-        padding-left: 3px;
+        padding-left: 7px;
     }
     
    
