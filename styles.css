@@ -17,7 +17,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     cursor: default;
-    user-select: none;
+    /* user-select: none; */
     /* cursor: url('circle.svg'), auto; */
     /* mix-blend-mode: exclusion; */
     /* mix-blend-mode: difference; */
