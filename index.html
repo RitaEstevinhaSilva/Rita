@@ -21,7 +21,7 @@
 <body>
 
 
-    <div class="scroll-container">
+    <div class="scroll-container" >
         <div class="scroll-content">
             <div class="scroll-item">CURRENTLY UPDATING</div>
             <div class="scroll-item">CURRENTLY UPDATING</div>
@@ -90,21 +90,31 @@
     'images/10.jpg',
     'images/1.jpg',
     'images/8.jpg',
-   
     ];
 
-    let currentIndex = 0; // Current image index
+    let currentIndex = 0;
 
-    function changeBackground() {
-        document.body.style.backgroundImage = `url(${images[currentIndex]})`; // Set the background image
-        currentIndex = (currentIndex + 1) % images.length; // Move to the next image, looping back to the start
-    }
+    function preloadImages() {
+    images.forEach(imageSrc => {
+        const img = new Image(); // Create a new image object
+        img.src = imageSrc; // Set the source to the current image URL
+    });
+}
 
-   
-    setInterval(changeBackground, 5000);
+// Function to change the background
+function changeBackground() {
+    document.body.style.backgroundImage = `url(${images[currentIndex]})`; 
+    currentIndex = (currentIndex + 1) % images.length; 
+}
 
-  
-    changeBackground();
+// Preload the images
+preloadImages();
+
+// Start changing background after preloading
+setInterval(changeBackground, 5000);
+
+// Change the background for the first time
+changeBackground();
 
 </script>
 
