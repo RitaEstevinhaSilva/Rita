@@ -159,5 +159,9 @@ a:hover {
         margin-right: 25px;
     }
 
+    body {
+       
+        transition: background-image 2s ease-in-out;
+    }
 
 }
