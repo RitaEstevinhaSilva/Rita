@@ -39,7 +39,6 @@ font-style: normal;
 h1 {
     font-weight: 300;
     font-size: 54px;
-
     color: white;
 
 }
@@ -52,6 +51,7 @@ h1 {
     padding: 20px;
     width: calc(100vw - 40px);
     letter-spacing: 0.1px;
+    line-height: normal;
 }
 
 
@@ -148,6 +148,7 @@ a:hover {
         justify-content: flex-start;
         padding: 10px;
         padding-bottom: 20px;
+        line-height: normal;
     }
 
     ul {
